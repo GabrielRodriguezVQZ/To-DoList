@@ -1,0 +1,31 @@
+En este codigo se hizo uso de las siguientes librerías:
+
+FastApi: por medio de este codigo podemos ver un ejemplo basico de manejo de datos
+de una api, no maneja base de datos real
+Ver datos (GET): Obtiene todos los datos almacenados.
+Agregar datos (POST): Permite agregar un nuevo dato a la lista.
+Actualizar datos (PUT): Reemplaza un dato en una posición específica.
+Eliminar datos (DELETE): Elimina un dato de una posición específica.
+Eliminar todos los datos (DELETE): Elimina todos los datos de la lista.
+
+Streamlit:Esta librería se utiliza para crear aplicaciones web de forma rápida y sencilla. 
+Aquí, se importa para poder generar la interfaz de usuario.
+
+request: Esta librería se utiliza para hacer solicitudes HTTP, que en este caso 
+se usan para interactuar con la API de FastAPI
+
+Uvicorn es un servidor ASGI (Asynchronous Server Gateway Interface) ligero y rápido 
+que se utiliza para ejecutar aplicaciones web en Python. En el contexto de FastAPI, 
+Uvicorn es el servidor que realmente ejecuta la aplicación y escucha las solicitudes 
+HTTP de los usuarios.
+
+Comandos para funcionar el codigo:
+
+streamlit run front.py
+Este es el comando principal para interactuar con Streamlit, una herramienta de 
+Python que permite crear aplicaciones web interactivas de manera rápida y sencilla
+
+
+uvicorn app:app --reload
+su función es ejecutar un servidor ligero y rapido para que la API
+pueda funcionar
